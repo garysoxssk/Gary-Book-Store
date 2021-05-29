@@ -1,0 +1,158 @@
+* {
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+    opacity: .95;
+}
+
+body {
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+h1, h3 {
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+input {
+    padding: 20px;
+
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.small-input {
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.mid-input {
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Desktop environment */
+@media only screen and (min-width: 601px) {
+    input[type='search'] {
+        min-width: 400px;
+        height: 40px;
+
+        padding: 20px;
+
+        flex-grow: 1;
+        border-radius: 5px;
+    }
+}
+
+/* Mobile environment */
+@media only screen and (max-width: 600px) {
+    input[type='search'] {
+        width: 70%;
+        height: 40px;
+
+        padding: 20px;
+
+        flex-grow: 1;
+        border-radius: 5px;
+    }
+}
+
+button {
+    display: inline-block;
+
+    padding: 0 20px;
+    background-color: paleturquoise;
+    border-radius: 5px;
+
+    outline: none;
+    border: none;
+
+    margin: 10px;
+    cursor: pointer;
+    text-align: center;
+
+    letter-spacing: 0.05em;
+
+    color: #222222;
+}
+
+/* different sized button */
+.small-size {
+    width: 100px;
+    height: 40px;
+}
+
+.mid-size {
+    width: 150px;
+    height: 40px;
+}
+
+button:hover {
+    background-color: turquoise;
+}
+
+/* almond color button */
+.almond-color {
+    background-color: aliceblue;
+}
+
+.almond-color:hover {
+    background-color: blanchedalmond;
+}
+
+hr {
+    margin: 20px 0;
+    width: 95%;
+    border-top: 3px dashed palevioletred;
+}
+
+.flex {
+    display: flex;
+}
+
+.col-dir {
+    flex-direction: column;
+}
+
+.row-dir {
+    flex-direction: row;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.flex-space-around {
+    justify-content: space-around;
+}
+
+.align-start {
+    align-items: start;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.main-fx {
+    background-color: beige;
+    border-radius: 20px;
+}
+
+.font-bold {
+    font-weight: bold;
+}

@@ -1,0 +1,54 @@
+.col-1, .col-3 {
+    width: 45%;
+    text-align: center;
+}
+
+.col-2 {
+    width: 10%;
+    text-align: center;
+}
+
+i.fa-user {
+    padding-right: 5px;
+}
+
+input#userid, input#pw {
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.warning {
+    color: red;
+    font-size: small;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+label {
+    margin-top: 10px;
+}
+
+@media only screen and (min-width: 601px) {
+    /* Also used in invoice.php */
+    .book-details {
+        width: 50%;
+    }
+
+    .book-price {
+        width: 10%;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    #full-name, #company-name, #addr-1, #addr-2,
+    #city, #region, #country, #zip-code {
+        width: 100%;
+    }
+    .book-details {
+        width: 80%;
+    }
+    .book-price {
+        width: 20%;
+    }
+}

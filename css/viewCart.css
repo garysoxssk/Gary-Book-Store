@@ -1,0 +1,38 @@
+#bottom-div {
+    padding: 20px;
+}
+
+div.order-item {
+     padding: 10px;
+}
+
+/* Desktop environment */
+@media only screen and (min-width: 601px) {
+    .item-title {
+        width: 40%;
+    }
+
+    .item-qty {
+        width: 20%;
+    }
+
+    .item-price {
+        width: 20%;
+    }
+}
+
+#total-price {
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+/* Mobile environment */
+@media only screen and (max-width: 600px) {
+    div.order-item {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .item-title, .item-qty, .item-price {
+        width: 95%;
+    }
+}

@@ -1,0 +1,52 @@
+.left-pane {
+    width: 100%;
+    margin: 30px;
+}
+
+.main-pane {
+    min-width: 75%;
+    margin: 30px;
+}
+
+#book-list {
+    flex-wrap: wrap;
+}
+
+.book {
+    width: 30%;
+    min-width: 300px;
+    padding: 50px;
+}
+
+.book-img {
+    width: 100%;
+}
+
+.book-img-large {
+    width: 40%;
+}
+
+.new-arrival {
+    color: red;
+    font-size: medium;
+    font-style: italic;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+input#qty {
+    margin: 5px
+}
+
+/* Mobile environment */
+@media only screen and (max-width: 600px) {
+    div#bottom-div {
+        flex-direction: column;
+    }
+    form#add-book-form {
+        flex-wrap: wrap;
+    }
+    button#order {
+        width: 100%;
+    }
+}
